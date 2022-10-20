@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="" href="assets/img/favicon.png" type="image/png">
+    <title>M3U2 | 3DE3</title>
+</head>
+
+<body>
+
+    <h1>INGRESA EL PASSWORD</h1>
+    <div style="display:flex; justify-content:center; flex-direction:row;">
+
+        <select id="numeroUno">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+
+        <select id="numeroDos">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+
+        <select id="numeroTres">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+
+    </div>
+
+    <BUtton type="buttom" onclick="
+        var numeroUno = document.querySelector('#numeroUno');
+        var numeroDos = document.querySelector('#numeroDos');
+        var numeroTres = document.querySelector('#numeroTres');
+        var resultado = document.querySelector('#resultado');
+
+        var passwordIngresada = numeroUno.value + numeroDos.value + numeroTres.value;
+
+        var claveUno = '911'
+        var claveDos = '714'
+        
+        if(passwordIngresada == claveUno){
+            resultado.innerHTML = 'Password 1 correcta'
+
+        } else if (passwordIngresada == claveDos) {
+            resultado.innerHTML = 'Password 2 correcta'
+
+        } else {
+            resultado.innerHTML = 'Password incorrecta !'
+
+        }
+    
+    "
+    >INGRESAR </button>
+    <p id="resultado"></p>
+
+</body>
+
+</html>

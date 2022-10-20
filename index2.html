@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="" href="assets/img/favicon.png" type="image/png">
+    <title>M3U2 | 2DE3</title>
+</head>
+<body>
+
+    <p>Puedes llevar hasta 10 Sticker en total</p>
+    <div style="display:flex; justify-content: center; align-items: center;">
+
+        <div style="display:flex; flex-direction: column; width: 33%; align-items: center;">
+            <img src="assets/img/Golku.png" alt="Stiker 1 Goku" width="200" height="200">
+            <input type="number" id="numeroUno" style="width: 200px;" value="0"/> <!--Placeholder y value, no son compatibles-->
+        </div>
+
+        <div style="display:flex; flex-direction: column; width: 33%; align-items: center;">
+            <img src="assets/img/rochy.jpeg" alt="Stiker 2 Rochy" width="200" height="200">
+            <input type="number" id="numeroDos" style="width: 200px;" value="0"/>
+        </div>
+
+        <div style="display:flex; flex-direction: column; width: 33%; align-items: center;">
+            <img src="assets/img/krilin.png" alt="Stiker 1 krilin" width="200" height="200">
+            <input type="number" id="numeroTres" style="width: 200px;" value="0"/>
+        </div>
+
+    </div>
+
+    <p id="resultado"></p>
+    <button type="buttom" onclick="
+    
+    var inputNumeroUno = document.querySelector ('#numeroUno');
+    var inputNumeroDos = document.querySelector ('#numeroDos');
+    var inputNumeroTres = document.querySelector ('#numeroTres');
+    var resultado = document.querySelector('#resultado')
+
+    var sumaSticker = Number(inputNumeroUno.value) + Number(inputNumeroDos.value) + Number(inputNumeroTres.value);
+
+    if(sumaSticker > 10){
+        resultado.innerHTML = 'Tienes muchos Sticker'; 
+    } else {
+        resultado.innerHTML = 'Llevas ' + sumaSticker + ' Sticker'; 
+
+    }
+
+
+    "
+    >Verificar </button>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="" href="assets/img/favicon.png" type="image/png">
+    <title>M3U2 | 1DE3</title>
+ 
+</head>
+
+<body>
+    <img onclick="
+        var imagen = document.querySelector('#imagen'); // Traemos de html la variable imagen a Variable imagen de JS
+        var statusBorde = imagen.style.border;     // Asignamos el valor del Stylo de imagen a var statusBorde, que luego sera la pregunta en condicion
+
+        if (statusBorde != ''){                    // preguntamos si var statusBorde tiene algun contenido
+            imagen.style.border = '';              // si condiciones es verdadera, le quitamos el stylo
+        } else {
+            imagen.style.border = '2px solid red'; // si condiciones es falsa, le agregamos el stylo
+        }
+
+    " id="imagen" src="assets/img/javascript.jpeg" alt="Desafio imagen uno" width="300px"/>
+
+</body>
+
+</html>
